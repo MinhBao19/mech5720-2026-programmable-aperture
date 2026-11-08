@@ -53,7 +53,7 @@ We tested three patterns, each shown on the LCD and cut as a matching paper mask
 
 Each pattern is 24 × 24 LCD pixels, which is 4.75 × 5.016 mm (the LCD pixels are not square). The paper masks have the same outer size and feature spacing. 
 
-They were laser cut from 80 gsm black Quill paper on an Epilog Fusion M2 CO₂ laser cutter. The cutting files are in [`Physical Structure/DXFs`](Physical%20Structure/DXFs), including larger and smaller versions that we did not test.
+They were laser cut from 80 gsm black Quill paper on an Epilog Fusion M2 CO₂ laser cutter. The cutting files are in [`Hardware/DXFs`](Hardware/DXFs), including larger and smaller versions that we did not test.
 
 ## Test chamber
 
@@ -114,7 +114,8 @@ The imaging model behind this is the standard defocus model: the captured image 
 Aperture-Laboratories-/
 ├── Captures/             Raw captures (DNG + PNG) for every aperture, target and distance
 ├── Code/                 Processing and analysis code
-├── Physical Structure/   Chamber details, LCD and mask holders, mask DXF files
+├── Hardware/             Chamber details, LCD and mask holders, mask DXF files
+│   ├── CAD/              Fusion 360 files for the 3D printed holders and lens tube
 │   └── DXFs/             Laser-cutting files for the paper masks (12–64 pixel sizes)
 └── docs/images/          Images used in this README
 ```

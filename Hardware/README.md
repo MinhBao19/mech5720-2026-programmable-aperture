@@ -1,4 +1,4 @@
-# Physical Structure
+# Hardware
 
 This folder contains everything needed to build the hardware: the 3D printed camera parts, the laser-cutting files for the paper masks, and the details of the test chamber.
 
