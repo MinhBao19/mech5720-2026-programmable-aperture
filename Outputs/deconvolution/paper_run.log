@@ -1,0 +1,9 @@
+paper Levin: star candidates
+  figures -> output_best\paper_levin
+  -> Wiener, 10-frame mean, PSF 1300 mm  fidelity 0.628
+paper Nayar: star candidates
+  figures -> output_best\paper_nayar
+  -> Wiener, 10-frame mean, PSF 1300 mm  fidelity 0.626
+paper Circle: star candidates
+  figures -> output_best\paper_circle
+  -> Wiener, 10-frame mean, PSF 1150 mm  fidelity 0.547

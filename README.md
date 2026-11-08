@@ -117,5 +117,6 @@ mech5720-2026-programmable-aperture/
 ├── Hardware/             Chamber details, LCD and mask holders, mask DXF files
 │   ├── CAD/              Fusion 360 files for the 3D printed holders and lens tube
 │   └── DXFs/             Laser-cutting files for the paper masks (12–64 pixel sizes)
+├── Outputs/              Processed results: PSF/MTF analysis, deconvolution, report figures
 └── docs/images/          Images used in this README
 ```
