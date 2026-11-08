@@ -47,7 +47,7 @@ Full-frame images: `deconvolution/<aperture>/images/star_captured.png` and `star
 
 Ring fidelity *F* of the LCD star after each processing step: green channel from one frame, 10-frame mean, per-colour PSFs, edge handling, and a total-variation prior.
 
-Values: `deconvolution/lcd_*/summary.json`, and the candidate table in [`deconvolution/TABLES.md`](deconvolution/TABLES.md).
+Values: `deconvolution/lcd_*/summary.json`, summarised in [`deconvolution/TABLES.md`](deconvolution/TABLES.md).
 
 ## Figure 8 – Natural scene
 
@@ -55,7 +55,7 @@ Values: `deconvolution/lcd_*/summary.json`, and the candidate table in [`deconvo
 
 A natural scene through the Levin aperture: captured at 1300 mm, and restored at 1000, 1150 and 1300 mm, each with the PSF measured at that depth.
 
-All apertures, both scenes and every depth: `deconvolution/<aperture>/images/`.
+Full-frame captured and restored images at each depth: `deconvolution/paper_levin/images/` and `deconvolution/lcd_levin/images/`.
 
 ## Figure 9 – LCD polarising films
 
