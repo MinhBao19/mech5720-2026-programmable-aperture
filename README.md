@@ -111,7 +111,7 @@ The imaging model behind this is the standard defocus model: the captured image 
 ## Repository layout
 
 ```
-Aperture-Laboratories-/
+mech5720-2026-programmable-aperture/
 ├── Captures/             Raw captures (DNG + PNG) for every aperture, target and distance
 ├── Code/                 Processing and analysis code
 ├── Hardware/             Chamber details, LCD and mask holders, mask DXF files
