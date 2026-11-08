@@ -1,12 +1,12 @@
-# MECH5720 2026 – Transparent LCD as a Programmable Coded Aperture
+# MECH5720 2026: Transparent LCD as a Programmable Coded Aperture
 
-**Group 13 – Aperture Laboratories:** Minh Bao, Devagya Budhiraja, Peter Cruz, Michael Delano, Ethan Duong
+**Group 13 – Aperture Laboratories:**  Michael Delano, Devagya Budhiraja, Minh Bao, Peter Cruz, Ethan Duong
 
-A coded aperture is a patterned mask placed inside a camera lens so that blurred images can be sharpened afterwards by computation. A cut mask is fixed: changing the pattern means opening the camera and fitting a new mask. In this project we placed a transparent LCD at the aperture of a camera so the pattern can be changed in software. We then compared it directly against laser-cut paper masks of the same size, in the same camera and the same test chamber.
+A coded aperture is a patterned mask placed inside a camera lens so that blurred images can be sharpened afterwards by computation. A cut mask is fixed, changing the pattern means opening the camera and fitting a new mask. 
+
+In this project we placed a transparent LCD at the aperture of a camera so the pattern can be changed in software. We then compared it directly against laser-cut paper masks of the same size, in the same camera and the same test chamber.
 
 This repository contains the hardware files, the raw captures and the processing code needed to rebuild the system and repeat the experiment.
-
----
 
 ## Contents
 
@@ -17,7 +17,6 @@ This repository contains the hardware files, the raw captures and the processing
 - [Processing pipeline](#processing-pipeline)
 - [Repository layout](#repository-layout)
 
----
 
 ## What we built
 
@@ -40,8 +39,6 @@ No off-the-shelf mount holds a flat display at the aperture of a Raspberry Pi le
 </p>
 <p align="center"><em>Left to right: lens and LCD holder, cross-section showing the LCD slot, lens tube.</em></p>
 
----
-
 ## Aperture patterns
 
 We tested three patterns, each shown on the LCD and cut as a matching paper mask:
@@ -54,9 +51,9 @@ We tested three patterns, each shown on the LCD and cut as a matching paper mask
   <img src="docs/images/aperture_patterns.png" width="640" alt="Levin, Zhou-Nayar and circle aperture patterns">
 </p>
 
-Each pattern is 24 × 24 LCD pixels, which is 4.75 × 5.016 mm (the LCD pixels are not square). The paper masks have the same outer size and feature spacing. They were laser cut from 80 gsm black Quill paper on an Epilog Fusion M2 CO₂ laser cutter. The cutting files are in [`Physical Structure/DXFs`](Physical%20Structure/DXFs), including larger and smaller versions that we did not test.
+Each pattern is 24 × 24 LCD pixels, which is 4.75 × 5.016 mm (the LCD pixels are not square). The paper masks have the same outer size and feature spacing. 
 
----
+They were laser cut from 80 gsm black Quill paper on an Epilog Fusion M2 CO₂ laser cutter. The cutting files are in [`Physical Structure/DXFs`](Physical%20Structure/DXFs), including larger and smaller versions that we did not test.
 
 ## Test chamber
 
@@ -65,8 +62,6 @@ All captures were taken inside an enclosed chamber with a matte black interior a
 <p align="center">
   <img src="docs/images/test_chamber.png" width="720" alt="Enclosed test chamber with target posts at 700 to 1300 mm and the camera rig at one end">
 </p>
-
----
 
 ## Capture procedure
 
@@ -88,8 +83,6 @@ Every target was captured as 10 frames, saved as both DNG and 16-bit linear PNG.
 | Siemens star and scenes | 64 000 µs | 60 000 – 256 000 µs |
 
 Capture folders are named by aperture, target and settings. For example, `LCDLevinPSFG1E60000D1000` is the LCD showing the Levin pattern, a PSF capture, gain 1, exposure 60 000 µs, at 1000 mm.
-
----
 
 ## Processing pipeline
 
@@ -114,7 +107,6 @@ flowchart LR
 
 The imaging model behind this is the standard defocus model: the captured image is the sharp scene convolved with the PSF plus noise, `y = h * x + n`, and the Wiener filter `W = H* / (|H|² + K)` inverts it in the frequency domain.
 
----
 
 ## Repository layout
 
