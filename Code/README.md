@@ -1,4 +1,4 @@
-# Coded aperture imaging: paper and LCD apertures
+# Coded aperture imaging: paper and LCD apertures (MECH5720 Lab 3)
 
 This code processes the Lab 3 captures for two kinds of coded aperture:
 
@@ -9,6 +9,7 @@ Each kind comes in three designs: Levin, Nayar and a plain circle.
 
 The code works from the raw DNGs. It covers:
 
+- the lab steps (Parts 0–8, Bonus 2 and Part 9)
 - the best reconstruction for each aperture
 - the PSF and MTF of each aperture
 - a breakdown of how much of each LCD PSF comes from the displayed design and how much from the LCD pixel grid
@@ -21,21 +22,21 @@ You need Python 3.11 or later.
 pip install -r requirements.txt
 ```
 
-The data is not included in this repository. The code expects the capture folder `New Captures` to sit next to the repository folder:
+The data is not included in this repository. The code expects the capture folder `Captures` to sit next to the repository folder:
 
 ```
 <parent>/
-├── New Captures/
+├── Captures/
 │   ├── PaperAperture/PaperAperture/      Paper-Part0 (dark frames), Paper-Part1, Levin - Paper, Nayar - Paper, Circle - Paper
 │   ├── LCDApertures/LCDApertures/        LCD-Part1, LCDLevin, LCDNayar, LCDCircle
 │   └── Part9_extract/Part9/              Part 9 depth scenes (extracted from Part9.zip)
 └── coded_aperture_lab3/                  this repository
 ```
 
-If the data is somewhere else, set `LAB3_DATA` to the path of `New Captures`. In PowerShell:
+If the data is somewhere else, set `LAB3_DATA` to the path of `Captures`. In PowerShell:
 
 ```
-$env:LAB3_DATA = "D:\path\to\New Captures"
+$env:LAB3_DATA = "D:\path\to\Captures"
 ```
 
 Each capture folder holds a `dng/` subfolder with 10 frames. The code reads only those DNG files.

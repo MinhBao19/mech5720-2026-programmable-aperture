@@ -32,7 +32,7 @@ import pipeline as P
 # ============================================================================ CONFIG
 HERE = Path(__file__).resolve().parent
 LCD = '--lcd' in sys.argv
-CAPTURES = Path(os.environ.get('LAB3_DATA', HERE.parent / 'New Captures'))
+CAPTURES = Path(os.environ.get('LAB3_DATA', HERE.parent / 'Captures'))
 PAPER_ROOT = CAPTURES / 'PaperAperture' / 'PaperAperture'
 LCD_ROOT = CAPTURES / 'LCDApertures' / 'LCDApertures'
 ROOT = LCD_ROOT if LCD else PAPER_ROOT

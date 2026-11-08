@@ -1,6 +1,6 @@
 """Lab 3 Part 9: depth from defocus and an all-in-focus image, for the paper and the LCD Nayar apertures.
 
-Data: New Captures/Part9_extract/Part9 (extracted from Part9.zip)
+Data: Captures/Part9_extract/Part9 (extracted from Part9.zip)
   PaperNayarDepthSceneG1E256000D800-1300   paper Nayar, objects at 800 and 1300 mm
   LCDNayarDepthSceneG1E256000D800-1300     LCD Nayar, same scene
 The camera was refocused to ~650 mm and no PSFs were captured at that focus, so the PSF for each depth is
