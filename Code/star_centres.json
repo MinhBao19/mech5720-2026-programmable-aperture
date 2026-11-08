@@ -1,0 +1,44 @@
+{
+ "PaperAperture/PaperAperture/Paper-Part1/NoApertureSiemensStarG1E64000D1000": {
+  "centre_rc": [
+   508.13,
+   879.34
+  ],
+  "R_px": 530.0
+ },
+ "PaperAperture/PaperAperture/Levin - Paper/Part3/LevinSiemensStarG1E64000D1300": {
+  "centre_rc": [
+   570.77,
+   741.51
+  ],
+  "R_px": 413.7
+ },
+ "PaperAperture/PaperAperture/Nayar - Paper/Part3/NayarSiemensStarG1E64000D1300": {
+  "centre_rc": [
+   651.58,
+   760.56
+  ],
+  "R_px": 412.0
+ },
+ "PaperAperture/PaperAperture/Circle - Paper/Part3/CircleSiemensStarG1E64000D1300": {
+  "centre_rc": [
+   520.16,
+   754.47
+  ],
+  "R_px": 403.3
+ },
+ "LCDApertures/LCDApertures/LCDNayar/LCDNayarSiemensStarG1E256000D1300": {
+  "centre_rc": [
+   629.52,
+   879.51
+  ],
+  "R_px": 393.7
+ },
+ "LCDApertures/LCDApertures/LCDCircle/LCDCircleSiemensStarPSFG1E256000D1300": {
+  "centre_rc": [
+   591.3,
+   837.52
+  ],
+  "R_px": 405.8
+ }
+}
