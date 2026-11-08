@@ -1,4 +1,4 @@
-# Coded aperture imaging: paper and LCD apertures (MECH5720 Lab 3)
+# Coded aperture imaging: paper and LCD apertures
 
 This code processes the Lab 3 captures for two kinds of coded aperture:
 
@@ -22,7 +22,7 @@ You need Python 3.11 or later.
 pip install -r requirements.txt
 ```
 
-The data is not included in this repository. The code expects the capture folder `Captures` to sit next to the repository folder:
+The code expects the capture folder `Captures` to sit next to the repository folder:
 
 ```
 <parent>/
