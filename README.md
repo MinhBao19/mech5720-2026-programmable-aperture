@@ -112,16 +112,16 @@ The imaging model behind this is the standard defocus model: the captured image 
 
 ```
 mech5720-2026-programmable-aperture/
-├── Captures/                  Link to the raw captures (~10 GB, hosted on OneDrive) and how they are organised
-├── Code/                      Processing and analysis code
-├── Hardware/                  Build files and assembly guide
-│   ├── CAD/                   Fusion 360 files: LCD lens holder, paper-mask holder, lens tube
-│   └── DXFs/                  Laser-cutting sheets for the paper masks (12–64 pixel sizes)
-├── Outputs/                   Results shown in the report
-│   ├── report_figures/        Figures 4–9 as they appear in the report
-│   ├── psf_mtf/               Full PSF/MTF figures for each aperture and their summary table
-│   └── deconvolution/         Siemens star ring-fidelity results (Tables 1 and 2)
-└── docs/images/               Images used in the READMEs
+├── Captures/              Raw data link
+├── Code/                  Analysis code
+├── Hardware/              Build guide
+│   ├── CAD/               Fusion 360 files
+│   └── DXFs/              Mask cutting files
+├── Outputs/               Report results
+│   ├── report_figures/    Report figures
+│   ├── psf_mtf/           PSF/MTF figures
+│   └── deconvolution/     Star results
+└── docs/images/           README images
 ```
 
 Each folder has its own README with more detail.
