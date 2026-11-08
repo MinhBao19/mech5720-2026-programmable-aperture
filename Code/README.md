@@ -1,4 +1,4 @@
-# Coded aperture imaging: paper and LCD apertures (MECH5720 Lab 3)
+# Coded aperture imaging: paper and LCD apertures
 
 This code processes the Lab 3 captures for two kinds of coded aperture:
 
@@ -9,7 +9,6 @@ Each kind comes in three designs: Levin, Nayar and a plain circle.
 
 The code works from the raw DNGs. It covers:
 
-- the lab steps (Parts 0–8, Bonus 2 and Part 9)
 - the best reconstruction for each aperture
 - the PSF and MTF of each aperture
 - a breakdown of how much of each LCD PSF comes from the displayed design and how much from the LCD pixel grid
